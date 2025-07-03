@@ -14,7 +14,7 @@ Moodify is a simple and beautiful mood tracker app. Track your daily emotions, e
 ![Moodify Screenshot](screenshot.png)
 
 ## 🚀 Live Link
-[https://yourusername.github.io/moodify](#)
+[https://janhvi9101.github.io/moodify](#)
 
 ## 📁 How to Use
 1. Clone or download this repo
