@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+.container {
+  background: #ffffff;
+  padding: 25px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#suggestion {
+  margin: 20px 0;
+  padding: 15px;
+  background: #e3f2fd;
+  border-left: 5px solid #2196f3;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-left: 4px solid #90caf9;
+  border-radius: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.calendar-grid div {
+  background: #fffde7;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Dark mode styles */
+body.light {
+  background: #f0f4f8;
+  color: #000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark textarea,
+body.dark select {
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark #suggestion {
+  background: #2a2a2a;
+  border-left: 5px solid #64b5f6;
+}
+
+#theme-toggle {
+  float: right;
+  background: none;
+  border: 2px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

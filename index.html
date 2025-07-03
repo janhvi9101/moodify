@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodify – Track & Reflect</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Moodify</h1>
+    <button id="theme-toggle" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+    <p>How are you feeling today?</p>
+
+    <label for="mood">Select your mood:</label>
+    <select id="mood">
+      <option value="😊">😊 Happy</option>
+      <option value="😞">😞 Sad</option>
+      <option value="😴">😴 Tired</option>
+      <option value="😡">😡 Angry</option>
+      <option value="😐">😐 Neutral</option>
+    </select>
+
+    <label for="gratitude">What are you grateful for today?</label>
+    <textarea id="gratitude" placeholder="e.g., Good health, family, coffee..."></textarea>
+
+    <button onclick="saveMood()">Save Mood</button>
+
+    <div id="suggestion"></div>
+
+    <h2>Mood History</h2>
+    <ul id="history"></ul>
+
+    <h2>Mood Analytics (Past 7 Days)</h2>
+    <canvas id="moodChart" width="400" height="200"></canvas>
+
+    <h2>Mood Calendar (Recent Days)</h2>
+    <div id="calendar" class="calendar-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
